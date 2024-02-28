@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+.light-mode {
+    background-color: #ced5e1;
+    color: black;
+}
+
+.dark-mode {
+    background-color: #222222;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.text-dom {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.box-color {
+    padding: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 20%;
+    background-color: gray;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-red,
+.btn-yellow,
+.btn-green,
+.btn-reset {
+    border: none;
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.btn-red:hover,
+.btn-yellow:hover,
+.btn-green:hover,
+.btn-reset:hover {
+    color: #ffffff;
+    background-color: #5776af;
+}
+
+.btn-theme {
+    border: none;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-theme:hover {
+    background: white;
+    color: black;
+    transition-delay: 0.1s;
+}
+
+
+.btn-theme2 {
+    border: none;
+    display: inline-block;
+    color: #000000;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-theme2:hover {
+    background: #000000;
+    color: #ffffff;
+    transition-delay: 0.1s;
+}

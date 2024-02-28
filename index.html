@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Dom Lern </title>
+</head>
+
+<body class="light-mode">
+    <div class="container"><br>
+        <!--<p id="text-dom">สวัสดี</p>-->
+        <p class="text-dom">The Color 🌈</p><br>
+        <div class="box-color"></div><br>
+        <div class="btn-box">
+            <button onclick="changeText()" class="btn-red">BG RED</button>
+            <button onclick="changeText2()" class="btn-yellow">BG YELLOW</button>
+            <button onclick="changeText3()" class="btn-green">BG GREEN</button>
+            <button onclick="resetbtn()" class="btn-reset">Reset Color</button>
+        </div><br>
+        <div class="btn-box">
+            <button class="dark-mode btn-theme" onclick="colormode()">Dark Mode &nbsp;🌑</button>
+            <button class="light-mode btn-theme2" onclick="colormode2()">Light Mode &nbsp;☀️</button>
+            <button class="btn-reset" onclick="addlist()">Add list Item</button>
+            <button class="btn-reset" onclick="removelist()">Remove list Item</button>
+        </div><br>
+        <div>
+            <ul class="menu">
+                <li class="item">1</li>
+                <li class="item">2</li>
+                <li class="item">3</li>
+            </ul>
+        </div>
+        <script src="./app.js"></script>
+    </div>
+</body>
+
+</html>
