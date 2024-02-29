@@ -9,7 +9,7 @@ const p3 = document.querySelector(".box-color")
 }*/
 const theme = document.querySelector(".light-mode")
 const menu = document.querySelector(".menu")
-const item = document.querySelector(".item")
+const item = document.querySelector(".item2")
 
 function changeText() {
   p2.innerHTML = "Color Is Red"
@@ -50,3 +50,12 @@ function addlist() {
 function removelist() {
   menu.removeChild(item)  // ลบ node ลูก
 } 
+
+
+const newitem = document.createElement("li");
+newitem.innerText = "E"; // สร้าง element li ข้อความ "E"
+
+function replacelist() {
+    menu.replaceChild(newitem,item) // แทนที่ node ใหม่แทน  node เก่า ด้วย replaceChild (new,old)
+}
+
