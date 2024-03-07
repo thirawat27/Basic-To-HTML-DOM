@@ -63,6 +63,7 @@
     padding: 10px;
     padding-right: 15px;
     padding-left: 15px;
+    text-decoration: none;
     cursor: pointer;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -115,4 +116,23 @@
     background: #000000;
     color: #ffffff;
     transition-delay: 0.1s;
+}
+
+.blue{
+    background: blue;
+    color: #ffff;
+    padding: 15px;
+    border: 3px solid #ffffff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.purple{
+    background: purple;
+    color: #ffff;
+    padding: 15px;
+    border: 3px solid #ffffff;
+    border-radius: 15px;
 }

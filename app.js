@@ -59,3 +59,36 @@ function replacelist() {
     menu.replaceChild(newitem,item) // แทนที่ node ใหม่แทน  node เก่า ด้วย replaceChild (new,old)
 }
 
+const bg = document.getElementById('bg-color');
+
+function btncolor() {
+  bg.classList.add("blue"); // classlist ทำหน้าที่เกี่ยวกับ class  เช่น เพิ่ม ลบ สลับ เปรียบเทียบ  ในที่นี้ classlist มี medthod คือ .add
+  // classlist.add คึือ เพิ่ม class
+    
+}
+
+function btncolorremove(){
+   bg.classList.remove("blue"); // classlist มี medthod เป็น .remove ทำหน้าที่ ลบ class
+}
+
+let status;
+
+function switchbtn(){ 
+  bg.classList.toggle("blue"); // classlist  ที่สามารถเพิ่มและลบในอันเดียวนั้นคือ  classlist.toggle 
+  //status = bg.classList.contains("blue"); //classlist.contains เปรียบเทียบหรือตรวจเช็ค และ แสดงผล 
+ // alert(`Result is : ${status}`) // แสดงผลเป็น boolen
+ if (bg.classList.contains("blue")) {
+       bg.style.color = "red"; // ใช้เช็ค
+ } else {
+       bg.style.color = "green";
+ }
+}
+
+function welcome() {
+   alert("Welcome"); // alert ข้อความของ onload event 
+}
+
+function hightligth(hi) {
+  hi.style.backgroundColor = "red"; // 
+
+}

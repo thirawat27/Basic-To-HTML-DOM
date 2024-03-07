@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Dom Lern </title>
-</head>
+    <title>Dom Lern</title>
+  </head>
 
-<body class="light-mode">
-    <div class="container"><br>
-        <!--<p id="text-dom">สวัสดี</p>-->
-        <p class="text-dom">The Color 🌈</p><br>
-        <div class="box-color"></div><br>
-        <div class="btn-box">
-            <button onclick="changeText()" class="btn-red">BG RED</button>
-            <button onclick="changeText2()" class="btn-yellow">BG YELLOW</button>
-            <button onclick="changeText3()" class="btn-green">BG GREEN</button>
-            <button onclick="resetbtn()" class="btn-reset">Reset Color</button>
-        </div><br>
-        <div class="btn-box">
-            <button class="dark-mode btn-theme" onclick="colormode()">Dark Mode &nbsp;🌑</button>
-            <button class="light-mode btn-theme2" onclick="colormode2()">Light Mode &nbsp;☀️</button>
-            <button class="btn-reset" onclick="addlist()">Add list Item</button>
-            <button class="btn-reset" onclick="removelist()">Remove list Item</button>
-            <button class="btn-reset" onclick="replacelist()">Replace Item</button>
-        </div><br>
-        <div>
-            <ul class="menu">
-                <li class="item">1</li>
-                <li class="item2">2</li>
-                <li class="item">3</li>
-            </ul>
-        </div>
-        <script src="./app.js"></script>
-    </div>
-</body>
-
+  <body class="light-mode">
+    <div class="container">
+      <br />
+      <!--<p id="text-dom">สวัสดี</p>-->
+      <p class="text-dom">The Color 🌈</p>
+      <br />
+      <div class="box-color"></div>
+      <br />
+      <div class="btn-box">
+        <button onclick="changeText()" class="btn-red">BG RED</button>
+        <button onclick="changeText2()" class="btn-yellow">BG YELLOW</button>
+        <button onclick="changeText3()" class="btn-green">BG GREEN</button>
+        <button onclick="resetbtn()" class="btn-reset">Reset Color</button>
+      </div>
+      <br />
+      <div class="btn-box">
+        <button class="dark-mode btn-theme" onclick="colormode()"> <!-- event onclick ทำงานเมื่อคลิก-->
+          Dark Mode &nbsp;🌑
+        </button>
+        <button class="light-mode btn-theme2" onclick="colormode2()">
+          Light Mode &nbsp;☀️
+        </button>
+        <button class="btn-reset" onclick="addlist()">Add list Item</button>
+        <button class="btn-reset" onclick="removelist()">
+          Remove list Item
+        </button>
+        <button class="btn-reset" onclick="replacelist()">Replace Item</button>
+        <a class="btn-reset" href="./event.html" >Next Page 🔜</a>
+      </div>    
+      <br />
+      <div id="bg-color">
+        <p>
+          How to lern javascript Dom Section is Dom css class add & remove
+          class.
+        </p>
+      </div>
+      <br />
+      <div>
+        <button class="btn-reset" onclick="btncolor()">เพิ่ม class</button>
+        <button class="btn-reset" onclick="btncolorremove()">ลบ class</button>
+        <button class="btn-reset" onclick="switchbtn()">สลับ class</button>
+      </div>
+      <br />
+      <div>
+        <ul class="menu">
+          <li class="item">1</li>
+          <li class="item2">2</li>
+          <li class="item">3</li>
+        </ul>
+      </div>
+    </div>  
+    <script src="./app.js"></script>
+  </body>
 </html>
