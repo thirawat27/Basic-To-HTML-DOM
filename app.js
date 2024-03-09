@@ -88,7 +88,23 @@ function welcome() {
    alert("Welcome"); // alert ข้อความของ onload event 
 }
 
-function hightligth(hi) {
+function hightligth(hi) { // hi เป็น object 
   hi.style.backgroundColor = "red"; // 
-
+  hi.style.color = "white";
+  hi.style.borderStyle = "none"
 }
+
+function nohightlight(say) {
+  say.style.backgroundColor = "green";
+  say.style.color = "white";
+  say.style.borderStyle = "none"; //
+}
+
+function optitem() {
+    const menu = document.getElementById("menu");
+    const display = document.getElementById("display");
+    //alert(`options is : ${menu.value} `) // mene คือตัวแปรที่เก็นค่าของ id menu ที่อยู่ใน select และ value คือค่าของ artibute value
+    console.log(menu.value.toUpperCase()); // touppercase คือฟังชั่นที่ทำให้ ผลลัพธ์์ตัวอักษรเป็นตัวใหญ่
+    display.innerText = menu.value;
+
+  }

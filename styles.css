@@ -136,3 +136,12 @@
     border: 3px solid #ffffff;
     border-radius: 15px;
 }
+.inp {
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}

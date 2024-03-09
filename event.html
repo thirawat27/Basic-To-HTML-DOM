@@ -8,8 +8,17 @@
   </head>
   <body onload="welcome()" ><!--event onload ทำงานเกี่ยวกับการโหลดหน้าเว็บ    -->
         <div class="container"><br>
-            <input type="text" placeholder="กรอกชื่อ..." onfocus="hightligth(this)">  <!-- this เป้น keyword ช่วยในการเข้าถึง object-->
-        </div>
-    <script src="./app.js"></script>
+            <input type="text" class="inp" placeholder="กรอกชื่อ..." onfocus="hightligth(this)" onblur="nohightlight(this)"><br>  
+    <!-- this เป้น keyword ช่วยในการเข้าถึง object--> 
+        <label for="">เลือกภาษาที่ต้องการ </label> <br><!--event onchange ทำงานเกี่ยวกับการเปลี่ยแปลงค่า   -->
+        <select name="" id="menu" onchange="optitem()">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JAVASCRIPT</option>
+        </select>
+        <br>
+        <p id="display"></p>
+      </div>      
+    <script src="./app.js"></script>    
   </body>
 </html>
